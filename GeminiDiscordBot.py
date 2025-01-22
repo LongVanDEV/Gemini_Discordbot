@@ -7,11 +7,14 @@ import re
 import os
 import fitz  # PyMuPDF
 import asyncio
+from keep_alive import keep_alive
 
 #Web Scraping
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
+
+keep_alive()
 
 load_dotenv()
 GOOGLE_AI_KEY = os.getenv("GOOGLE_AI_KEY")
